@@ -23,12 +23,9 @@ Route::get('/contact', function () {
     return view('pages.contact');
 });
 
-Route::post('/contact', function () {
+Route::post('/thankyou', function () {
     $data = request()->all();
-    echo "Thank you for your registration! " . "<strong>" . $data['name'] . '<br>' . "</strong>";
-//    echo "Name: " . $data['name'] . '<br>';
-    echo "Email: " . $data['email'] . '<br>';
-    echo "Message: " . $data['body'];
-
-
+    echo "  Thank you for your registration! " . '<br>';
+    echo "<strong>" . $data['name'] . '<br>' . "</strong>";
+    return view('pages.thankyou');
 });
