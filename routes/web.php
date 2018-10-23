@@ -28,7 +28,7 @@ Route::post('/contact', function () {
     echo "Thank you for your registration! " . "<strong>" . $data['name'] . '<br>' . "</strong>";
 //    echo "Name: " . $data['name'] . '<br>';
     echo "Email: " . $data['email'] . '<br>';
-    echo "Contact: " . $data['body'];
+    echo "Message: " . $data['body'];
 
 
 });
